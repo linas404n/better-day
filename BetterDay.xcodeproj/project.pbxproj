@@ -10,9 +10,14 @@
 		B0A96D0C2CDEBEC5003AF19C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0A96D062CDEBEC5003AF19C /* Preview Assets.xcassets */; };
 		B0A96D0D2CDEBEC5003AF19C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0A96D082CDEBEC5003AF19C /* Assets.xcassets */; };
 		B0A96D0E2CDEBEC5003AF19C /* BetterDayApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A96D092CDEBEC5003AF19C /* BetterDayApp.swift */; };
-		B0A96D0F2CDEBEC5003AF19C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A96D0A2CDEBEC5003AF19C /* ContentView.swift */; };
+		B0A96D0F2CDEBEC5003AF19C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A96D0A2CDEBEC5003AF19C /* HomeView.swift */; };
 		B0A96D132CDEC05B003AF19C /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A96D122CDEC05B003AF19C /* Day.swift */; };
 		B0A96D152CDEC064003AF19C /* Thing.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A96D142CDEC064003AF19C /* Thing.swift */; };
+		B0A96D1B2CDEC0F4003AF19C /* ThingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A96D1A2CDEC0F4003AF19C /* ThingsView.swift */; };
+		B0A96D1D2CDEC100003AF19C /* TodayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A96D1C2CDEC100003AF19C /* TodayView.swift */; };
+		B0A96D1F2CDEC107003AF19C /* RemindersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A96D1E2CDEC107003AF19C /* RemindersView.swift */; };
+		B0A96D212CDEC110003AF19C /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A96D202CDEC110003AF19C /* SettingsView.swift */; };
+		B0A96D232CDEC14B003AF19C /* AddThingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A96D222CDEC14B003AF19C /* AddThingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,9 +25,14 @@
 		B0A96D062CDEBEC5003AF19C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B0A96D082CDEBEC5003AF19C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B0A96D092CDEBEC5003AF19C /* BetterDayApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetterDayApp.swift; sourceTree = "<group>"; };
-		B0A96D0A2CDEBEC5003AF19C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B0A96D0A2CDEBEC5003AF19C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		B0A96D122CDEC05B003AF19C /* Day.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
 		B0A96D142CDEC064003AF19C /* Thing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thing.swift; sourceTree = "<group>"; };
+		B0A96D1A2CDEC0F4003AF19C /* ThingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThingsView.swift; sourceTree = "<group>"; };
+		B0A96D1C2CDEC100003AF19C /* TodayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayView.swift; sourceTree = "<group>"; };
+		B0A96D1E2CDEC107003AF19C /* RemindersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersView.swift; sourceTree = "<group>"; };
+		B0A96D202CDEC110003AF19C /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		B0A96D222CDEC14B003AF19C /* AddThingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddThingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,9 +94,46 @@
 		B0A96D112CDEC033003AF19C /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				B0A96D0A2CDEBEC5003AF19C /* ContentView.swift */,
+				B0A96D0A2CDEBEC5003AF19C /* HomeView.swift */,
+				B0A96D162CDEC0C2003AF19C /* Today */,
+				B0A96D172CDEC0C7003AF19C /* Thing */,
+				B0A96D182CDEC0D0003AF19C /* Reminder */,
+				B0A96D192CDEC0D8003AF19C /* Settings */,
 			);
 			path = Screens;
+			sourceTree = "<group>";
+		};
+		B0A96D162CDEC0C2003AF19C /* Today */ = {
+			isa = PBXGroup;
+			children = (
+				B0A96D1C2CDEC100003AF19C /* TodayView.swift */,
+			);
+			path = Today;
+			sourceTree = "<group>";
+		};
+		B0A96D172CDEC0C7003AF19C /* Thing */ = {
+			isa = PBXGroup;
+			children = (
+				B0A96D1A2CDEC0F4003AF19C /* ThingsView.swift */,
+				B0A96D222CDEC14B003AF19C /* AddThingView.swift */,
+			);
+			path = Thing;
+			sourceTree = "<group>";
+		};
+		B0A96D182CDEC0D0003AF19C /* Reminder */ = {
+			isa = PBXGroup;
+			children = (
+				B0A96D1E2CDEC107003AF19C /* RemindersView.swift */,
+			);
+			path = Reminder;
+			sourceTree = "<group>";
+		};
+		B0A96D192CDEC0D8003AF19C /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				B0A96D202CDEC110003AF19C /* SettingsView.swift */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,9 +210,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0A96D152CDEC064003AF19C /* Thing.swift in Sources */,
+				B0A96D212CDEC110003AF19C /* SettingsView.swift in Sources */,
+				B0A96D1F2CDEC107003AF19C /* RemindersView.swift in Sources */,
 				B0A96D0E2CDEBEC5003AF19C /* BetterDayApp.swift in Sources */,
-				B0A96D0F2CDEBEC5003AF19C /* ContentView.swift in Sources */,
+				B0A96D0F2CDEBEC5003AF19C /* HomeView.swift in Sources */,
+				B0A96D1B2CDEC0F4003AF19C /* ThingsView.swift in Sources */,
+				B0A96D1D2CDEC100003AF19C /* TodayView.swift in Sources */,
 				B0A96D132CDEC05B003AF19C /* Day.swift in Sources */,
+				B0A96D232CDEC14B003AF19C /* AddThingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

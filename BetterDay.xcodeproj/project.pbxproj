@@ -11,6 +11,8 @@
 		B0A96D0D2CDEBEC5003AF19C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0A96D082CDEBEC5003AF19C /* Assets.xcassets */; };
 		B0A96D0E2CDEBEC5003AF19C /* BetterDayApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A96D092CDEBEC5003AF19C /* BetterDayApp.swift */; };
 		B0A96D0F2CDEBEC5003AF19C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A96D0A2CDEBEC5003AF19C /* ContentView.swift */; };
+		B0A96D132CDEC05B003AF19C /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A96D122CDEC05B003AF19C /* Day.swift */; };
+		B0A96D152CDEC064003AF19C /* Thing.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0A96D142CDEC064003AF19C /* Thing.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		B0A96D082CDEBEC5003AF19C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B0A96D092CDEBEC5003AF19C /* BetterDayApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetterDayApp.swift; sourceTree = "<group>"; };
 		B0A96D0A2CDEBEC5003AF19C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B0A96D122CDEC05B003AF19C /* Day.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
+		B0A96D142CDEC064003AF19C /* Thing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thing.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,12 +63,30 @@
 		B0A96D0B2CDEBEC5003AF19C /* BetterDay */ = {
 			isa = PBXGroup;
 			children = (
+				B0A96D092CDEBEC5003AF19C /* BetterDayApp.swift */,
+				B0A96D102CDEC02B003AF19C /* Model */,
+				B0A96D112CDEC033003AF19C /* Screens */,
 				B0A96D072CDEBEC5003AF19C /* Preview Content */,
 				B0A96D082CDEBEC5003AF19C /* Assets.xcassets */,
-				B0A96D092CDEBEC5003AF19C /* BetterDayApp.swift */,
-				B0A96D0A2CDEBEC5003AF19C /* ContentView.swift */,
 			);
 			path = BetterDay;
+			sourceTree = "<group>";
+		};
+		B0A96D102CDEC02B003AF19C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B0A96D122CDEC05B003AF19C /* Day.swift */,
+				B0A96D142CDEC064003AF19C /* Thing.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B0A96D112CDEC033003AF19C /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				B0A96D0A2CDEBEC5003AF19C /* ContentView.swift */,
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,8 +162,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0A96D152CDEC064003AF19C /* Thing.swift in Sources */,
 				B0A96D0E2CDEBEC5003AF19C /* BetterDayApp.swift in Sources */,
 				B0A96D0F2CDEBEC5003AF19C /* ContentView.swift in Sources */,
+				B0A96D132CDEC05B003AF19C /* Day.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
